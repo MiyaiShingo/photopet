@@ -5,6 +5,8 @@
 #次の1行をコメントアウト(or 削除)
 #from scipy.misc import imread, imresize
 #ソース変更
+
+得永行追加
 #return imread(image_name)　－＞　return imageio.imread(image_name)
 #return imresize(image_array, size)　－＞　return imageio.imresize(image_array, size)
 #inferenceをgoogleドライブのutilsフォルダにあるファイルと入れ替えてください。

@@ -17,6 +17,7 @@
 #forcusがターゲットとなる人の座標[x,y]です
 
 #中央リポジトリにプッシュしたい（宮井）
+#土井が書いて見る
 
 from statistics import mode
 

@@ -1,3 +1,5 @@
+#酒井がいじり散らかしました
+
 #下記の事前準備が必要です。チーム３のスレッドおよび、Tensoflow3インストールまでを参照してください。
 #主要な所は face_classificationの学習済みモデルは公開リポジトリから取得します.
 #　git clone https://github.com/oarriaga/face_classification

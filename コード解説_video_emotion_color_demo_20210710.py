@@ -1,4 +1,7 @@
 #酒井がいじり散らかしました
+#得永行追加
+#中央リポジトリにプッシュしたい（宮井）
+#土井が書いて見る
 
 #下記の事前準備が必要です。チーム３のスレッドおよび、Tensoflow3インストールまでを参照してください。
 #主要な所は face_classificationの学習済みモデルは公開リポジトリから取得します.
@@ -8,7 +11,7 @@
 #from scipy.misc import imread, imresize
 #ソース変更
 
-得永行追加
+
 #return imread(image_name)　－＞　return imageio.imread(image_name)
 #return imresize(image_array, size)　－＞　return imageio.imresize(image_array, size)
 #inferenceをgoogleドライブのutilsフォルダにあるファイルと入れ替えてください。
@@ -16,8 +19,7 @@
 #
 #forcusがターゲットとなる人の座標[x,y]です
 
-#中央リポジトリにプッシュしたい（宮井）
-#土井が書いて見る
+
 
 from statistics import mode
 

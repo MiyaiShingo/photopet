@@ -7,6 +7,8 @@ import cv2
 from keras.models import load_model
 import numpy as np
 import time
+
+#/binにface_classificationを置いた場合
 sys.path.append("/bin/face_classification/src/utils")
 from datasets import get_labels
 from inference import detect_faces
@@ -17,20 +19,37 @@ from inference import load_detection_model
 from inference import draw_emotion
 from preprocessor import preprocess_input
 
+#/Piにface_classificationを置いた場合
+# from utils.datasets import get_labels
+# from utils.inference import detect_faces
+# from utils.inference import draw_text
+# from utils.inference import draw_bounding_box
+# from utils.inference import apply_offsets
+# from utils.inference import load_detection_model
+# from utils.inference import draw_emotion
+# from utils.preprocessor import preprocess_input
+
 import cv2
 import os
 import time
 import Adafruit_PCA9685
 import RPi.GPIO as GPIO
 
+#プログラムの置き場に応じて変更必要
 sys.path.append("/bin/face_classification/src")
 sys.path.append("/bin/face_classification/trained_models/emotion_models")
 
 #parameters for loading data and images
-detection_model_path = "/bin/face_classification/trained_models/detection_models/haarcascade_frontalface_default.xml"
 #haarcascade_frontalface_default.xml...顔 (正面)
 
+#/binに置いた場合
+detection_model_path = "/bin/face_classification/trained_models/detection_models/haarcascade_frontalface_default.xml"
 emotion_model_path = "/bin/face_classification/trained_models/emotion_models/fer2013_mini_XCEPTION.102-0.66.hdf5"
+
+#/piに置いた場合
+# detection_model_path = '../trained_models/detection_models/haarcascade_frontalface_default.xml'
+# emotion_model_path = '../trained_models/emotion_models/fer2013_mini_XCEPTION.102-0.66.hdf5'
+
 emotion_labels = get_labels('fer2013')
 
 pwm = Adafruit_PCA9685.PCA9685()

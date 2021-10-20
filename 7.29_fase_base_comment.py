@@ -1,5 +1,6 @@
 #inferenceをgoogleドライブのutilsフォルダにあるファイルと入れ替えてください
 #forcusがターゲットとなる人の座標[x,y]です
+#10/20、宮井,　PWMの値を修正しました（#1miyai）
 
 from statistics import mode
 import sys
@@ -40,7 +41,8 @@ pwm.set_pwm_freq(60)
 GPIO.setmode(GPIO.BOARD)
 
 # 前進最高速、停止、後進最高速のPWM値(右)
-R_pwm_hi_top_forward = 480
+
+R_pwm_hi_top_forward = 480 #1miyai:480⇒○○へ
 R_pwm_top_forward = 440
 R_pwm_forward = 380
 R_pwm_stop = 350
